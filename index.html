@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Next Page Button</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+    }
+
+    .next-button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .next-button:hover {
+      background-color: #2980b9;
+      transform: scale(1.05);
+    }
+
+    .next-button:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button that redirects to the next page -->
+  <button class="next-button" onclick="goToNextPage()">Next Page →</button>
+
+  <script>
+    function goToNextPage() {
+      // Replace 'next.html' with the actual next page's URL
+      window.location.href = 'next.html';
+    }
+  </script>
+
+</body>
+</html>
